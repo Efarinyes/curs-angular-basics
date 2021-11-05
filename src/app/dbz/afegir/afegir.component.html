@@ -1,0 +1,20 @@
+<h3>Afegeix personatge</h3>
+<hr>
+<form (ngSubmit) = 'afegir()'>
+    <input 
+        type="text" 
+        placeholder="Nom personatge?"
+        name = 'nom'
+        [(ngModel)] = 'nouPersonatge.nom'
+                
+    />
+    <!-- [value] = "nouPersonatge.nom"
+    (input) = "cambiarNom( $event )" -->
+    <input 
+        type="number" 
+        placeholder="Poder?" 
+        name = 'poder'
+        [(ngModel)] = 'nouPersonatge.poder'
+    />
+    <button type="submit"> Afegeix personatge</button>
+</form>
